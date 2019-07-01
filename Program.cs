@@ -23,7 +23,7 @@ namespace Deliverable_two
             Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name, selection, travel);
             Console.WriteLine("Have a good time, goodbye");
         }
-        public static void decisionmaking(Double activitySelection, Double numParticipants)
+        public static (string travel, string selection, string name) decisionmaking(Double activitySelection, Double numParticipants)
         {
             Double activity = Convert.ToDouble(activitySelection);
 
