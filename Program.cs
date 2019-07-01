@@ -10,36 +10,46 @@ namespace Deliverable_two
             Console.WriteLine("Here are your choices, please use the number associated with the activity to make your selection.");
             Console.WriteLine("1. Action" + "\n" + "2. Chilling" + "\n" + "3. Danger" + "\n" + "4. Good Food");
             Double activitySelection = Convert.ToDouble(Console.ReadLine());
-
+            
             Console.WriteLine("How many people besides you are going to be participating?");
             Double numParticipants = Convert.ToDouble(Console.ReadLine());
 
             decisionmaking(activitySelection, numParticipants);
-            Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", selection, travel);
+            string name1 = decisionmaking(name);
+            string activity1 = decisionmaking(selection);
+            string travel1 = decisionmaking(travel);
+
+
+            Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name, selection, travel);
             Console.WriteLine("Have a good time, goodbye");
         }
         public static void decisionmaking(Double activitySelection, Double numParticipants)
         {
             Double activity = Convert.ToDouble(activitySelection);
-            Double num = Convert.ToDouble(numParticipants);
+
             string selection;
             string travel;
+            string name;
 
             if (activity == 1)
             {
                 selection = "Stock car racing";
+                name = "action";
             }
             else if (activity == 2)
             {
                 selection = "Hiking";
+                name = "chilling";
             }
             else if (activity == 3)
             {
                 selection = "Skydiving";
+                name = "danger";
             }
             else
             {
                 selection = "To taco bell";
+                name = "good food";
             }
 
             if (numParticipants == 0)
@@ -58,7 +68,7 @@ namespace Deliverable_two
             {
                 travel = "an airplane";
             }
-            return;
+            return (travel, selection, name);
 
 
 
