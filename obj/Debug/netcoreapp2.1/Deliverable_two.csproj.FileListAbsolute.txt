@@ -1,0 +1,11 @@
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.csprojAssemblyReference.cache
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.csproj.CoreCompileInputs.cache
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.AssemblyInfoInputs.cache
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.AssemblyInfo.cs
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\bin\Debug\netcoreapp2.1\Deliverable_two.deps.json
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\bin\Debug\netcoreapp2.1\Deliverable_two.runtimeconfig.json
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\bin\Debug\netcoreapp2.1\Deliverable_two.runtimeconfig.dev.json
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\bin\Debug\netcoreapp2.1\Deliverable_two.dll
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\bin\Debug\netcoreapp2.1\Deliverable_two.pdb
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.dll
+D:\Grand_Circus_C#\Unit_one\deliverable_two\Deliverable_two\Deliverable_two\obj\Debug\netcoreapp2.1\Deliverable_two.pdb
