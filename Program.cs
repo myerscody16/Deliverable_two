@@ -14,16 +14,9 @@ namespace Deliverable_two
             Console.WriteLine("How many people besides you are going to be participating?");
             Double numParticipants = Convert.ToChar(Console.ReadLine());
 
-            string selection;
-            string travel;
-            string name;
-
-            actType(activitySelection);
-            string activity1 = actType(selection);
-            travelOpts(numParticipants);
-            string travel1 = travelOpts(travel);
-            nameOpts(activitySelection);
-            string name1 = nameOpts(name);
+            string activity1 = actType(activitySelection);
+            string travel1 = travelOpts(numParticipants);
+            string name1 = nameOpts(activitySelection);
 
             Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name1, activity1, travel1);
             Console.WriteLine("Have a good time, goodbye");
