@@ -14,44 +14,45 @@ namespace Deliverable_two
             Console.WriteLine("How many people besides you are going to be participating?");
             Double numParticipants = Convert.ToDouble(Console.ReadLine());
 
-            decisionmaking(activitySelection, numParticipants);
-            string name1 = decisionmaking(name);
-            string activity1 = decisionmaking(selection);
-            string travel1 = decisionmaking(travel);
+            actType(activitySelection);
+            travelOpts(numParticipants);
+            nameOpts(activitySelection);
+            string name1 = nameOpts(name);
+            string activity1 = actType(selection);
+            string travel1 = travelOpts(travel);
 
 
             Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name, selection, travel);
             Console.WriteLine("Have a good time, goodbye");
         }
-        public static (string travel, string selection, string name) decisionmaking(Double activitySelection, Double numParticipants)
+        public static string actType(Double activitySelection)
         {
             Double activity = Convert.ToDouble(activitySelection);
 
             string selection;
-            string travel;
-            string name;
 
             if (activity == 1)
             {
                 selection = "Stock car racing";
-                name = "action";
+                
             }
             else if (activity == 2)
             {
                 selection = "Hiking";
-                name = "chilling";
             }
             else if (activity == 3)
             {
                 selection = "Skydiving";
-                name = "danger";
             }
             else
             {
                 selection = "To taco bell";
-                name = "good food";
             }
-
+            return selection;
+        }
+        public static string travelOpts(Double numParticipants)
+        {
+            string travel;
             if (numParticipants == 0)
             {
                 travel = "sneakers";
@@ -68,10 +69,30 @@ namespace Deliverable_two
             {
                 travel = "an airplane";
             }
-            return (travel, selection, name);
+            return travel;
+        }
+        public static string nameOpts(Double activitySelection)
+        {
+            Double opts = Convert.ToDouble(activitySelection);
+            string name;
 
-
-
+            if (opts == 1)
+            {
+                name = "action";
+            }
+            else if (opts == 2)
+            {
+                name = "chilling";
+            }
+            else if (opts == 3)
+            {
+                name = "danger";
+            }
+            else if(opts == 4)
+            {
+                name = "good food";
+            }
+            return name;
         }
     }
 }
