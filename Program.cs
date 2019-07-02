@@ -22,7 +22,7 @@ namespace Deliverable_two
             string travel1 = travelOpts(travel);
 
 
-            Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name, selection, travel);
+            Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name1, activity1, travel1);
             Console.WriteLine("Have a good time, goodbye");
         }
         public static string actType(Double activitySelection)
