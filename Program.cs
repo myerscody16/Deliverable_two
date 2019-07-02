@@ -9,10 +9,10 @@ namespace Deliverable_two
             Console.WriteLine("Hello! please select which type of activity you're looking for.");
             Console.WriteLine("Here are your choices, please use the number associated with the activity to make your selection.");
             Console.WriteLine("1. Action" + "\n" + "2. Chilling" + "\n" + "3. Danger" + "\n" + "4. Good Food");
-            Double activitySelection = Convert.ToDouble(Console.ReadLine());
+            Double activitySelection = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine("How many people besides you are going to be participating?");
-            Double numParticipants = Convert.ToChar(Console.ReadLine());
+            Double numParticipants = Convert.ToInt32(Console.ReadLine());
 
             string activity1 = actType(activitySelection);
             string travel1 = travelOpts(numParticipants);
@@ -49,17 +49,17 @@ namespace Deliverable_two
         public static string travelOpts(Double numParticipants)
         {
 
-            string travel;
+            string travel = string.Empty;
 
             if (numParticipants == 0)
             {
                 travel = "sneakers";
             }
-            else if (numParticipants >= 1 | numParticipants <= 4)
+            else if (numParticipants >= 1 && numParticipants <= 4)
             {
                 travel = "a sedan";
             }
-            else if (numParticipants >= 5 | numParticipants <= 10)
+            else if (numParticipants >= 5 && numParticipants <= 10)
             {
                 travel = "a van";
             }
