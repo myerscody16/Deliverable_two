@@ -12,15 +12,18 @@ namespace Deliverable_two
             Double activitySelection = Convert.ToDouble(Console.ReadLine());
             
             Console.WriteLine("How many people besides you are going to be participating?");
-            Double numParticipants = Convert.ToDouble(Console.ReadLine());
+            Double numParticipants = Convert.ToChar(Console.ReadLine());
+
+            string selection;
+            string travel;
+            string name;
 
             actType(activitySelection);
+            string activity1 = actType(selection);
             travelOpts(numParticipants);
+            string travel1 = travelOpts(travel);
             nameOpts(activitySelection);
             string name1 = nameOpts(name);
-            string activity1 = actType(selection);
-            string travel1 = travelOpts(travel);
-
 
             Console.WriteLine("Okay, if you're in the mood for {0}, then you should go to {1}, and travel in a {2}.", name1, activity1, travel1);
             Console.WriteLine("Have a good time, goodbye");
@@ -52,18 +55,20 @@ namespace Deliverable_two
         }
         public static string travelOpts(Double numParticipants)
         {
+
             string travel;
+
             if (numParticipants == 0)
             {
                 travel = "sneakers";
             }
-            else if (numParticipants <= 1 | numParticipants >= 4)
+            else if (numParticipants >= 1 | numParticipants <= 4)
             {
                 travel = "a sedan";
             }
-            else if (numParticipants <= 5 | numParticipants >= 10)
+            else if (numParticipants >= 5 | numParticipants <= 10)
             {
-
+                travel = "a van";
             }
             else if (numParticipants < 10)
             {
