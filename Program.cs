@@ -63,7 +63,7 @@ namespace Deliverable_two
             {
                 travel = "a van";
             }
-            else if (numParticipants < 10)
+            else
             {
                 travel = "an airplane";
             }
@@ -71,24 +71,27 @@ namespace Deliverable_two
         }
         public static string nameOpts(Double activitySelection)
         {
-            Double opts = Convert.ToDouble(activitySelection);
-            string name;
+            string name = string.Empty;
 
-            if (opts == 1)
+            if (activitySelection == 1)
             {
                 name = "action";
             }
-            else if (opts == 2)
+            else if (activitySelection == 2)
             {
                 name = "chilling";
             }
-            else if (opts == 3)
+            else if (activitySelection == 3)
             {
                 name = "danger";
             }
-            else if(opts == 4)
+            else if(activitySelection == 4)
             {
                 name = "good food";
+            }
+            else
+            {
+                Console.WriteLine("Please input 1, 2, 3, or 4. Thank you.");
             }
             return name;
         }
